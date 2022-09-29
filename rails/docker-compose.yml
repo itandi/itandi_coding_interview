@@ -2,7 +2,7 @@ version: "3"
 
 services:
   db:
-    image: mysql:8.0.29
+    image: mysql:8.0
     volumes:
       - db-data:/var/lib/mysql
     environment:
@@ -14,7 +14,7 @@ services:
       - .:/usr/src/app
     environment:
       - DATABASE_URL=mysql2://root:root@db/coding_interview
-      - DATABASE_TEST_URL=mysql2://root:root@db/coding_interview_test
+      - DATABASE_TEST_URL=mysql2://root:GxfRcpCDBL3T9d@db/coding_interview_test
     depends_on:
       - db
     ports:
