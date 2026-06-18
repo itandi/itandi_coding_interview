@@ -1,0 +1,191 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "on",
+				"useSortedAttributes": "on",
+				"useSortedKeys": "on",
+				"useSortedPackageJson": "on"
+			}
+		}
+	},
+	"css": {
+		"formatter": {
+			"enabled": false
+		},
+		"linter": {
+			"enabled": false
+		}
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"quoteProperties": "preserve",
+			"trailingCommas": "none"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"a11y": {
+				"noAccessKey": "off",
+				"noAriaHiddenOnFocusable": "off",
+				"noAriaUnsupportedElements": "off",
+				"noAutofocus": "off",
+				"noDistractingElements": "off",
+				"noHeaderScope": "off",
+				"noInteractiveElementToNoninteractiveRole": "off",
+				"noLabelWithoutControl": "off",
+				"noNoninteractiveElementToInteractiveRole": "off",
+				"noNoninteractiveTabindex": "off",
+				"noPositiveTabindex": "off",
+				"noRedundantAlt": "off",
+				"noRedundantRoles": "off",
+				"noStaticElementInteractions": "off",
+				"noSvgWithoutTitle": "off",
+				"useAltText": "off",
+				"useAnchorContent": "off",
+				"useAriaActivedescendantWithTabindex": "off",
+				"useAriaPropsForRole": "off",
+				"useAriaPropsSupportedByRole": "off",
+				"useButtonType": "off",
+				"useFocusableInteractive": "off",
+				"useHeadingContent": "off",
+				"useHtmlLang": "off",
+				"useIframeTitle": "off",
+				"useKeyWithClickEvents": "off",
+				"useKeyWithMouseEvents": "off",
+				"useMediaCaption": "off",
+				"useSemanticElements": "off",
+				"useValidAnchor": "off",
+				"useValidAriaProps": "off",
+				"useValidAriaRole": "off",
+				"useValidAriaValues": "off",
+				"useValidAutocomplete": "off",
+				"useValidLang": "off"
+			},
+			"complexity": {
+				"noBannedTypes": "off",
+				"noStaticOnlyClass": "off",
+				"noUselessConstructor": "off",
+				"noUselessEmptyExport": "off",
+				"noUselessFragments": "off",
+				"noUselessThisAlias": "off",
+				"noUselessTypeConstraint": "off",
+				"useLiteralKeys": "off",
+				"useOptionalChain": "off"
+			},
+			"correctness": {
+				"noChildrenProp": "off",
+				"noInvalidUseBeforeDeclaration": "off",
+				"noPrecisionLoss": "off",
+				"noUndeclaredDependencies": "error",
+				"noUnusedVariables": "off",
+				"noVoidElementsWithChildren": "off",
+				"useExhaustiveDependencies": "off",
+				"useHookAtTopLevel": "off",
+				"useJsxKeyInIterable": "off"
+			},
+			"nursery": {
+				"useExplicitType": "off",
+				"useImportsFirst": "error"
+			},
+			"performance": {
+				"noBarrelFile": "error",
+				"noImgElement": "off"
+			},
+			"preset": "recommended",
+			"security": {
+				"noBlankTarget": "off",
+				"noDangerouslySetInnerHtml": "off",
+				"noDangerouslySetInnerHtmlWithChildren": "off"
+			},
+			"style": {
+				"noCommonJs": "off",
+				"noHeadElement": "off",
+				"noImplicitBoolean": "off",
+				"noInferrableTypes": "off",
+				"noNamespace": "off",
+				"noNonNullAssertion": "off",
+				"noParameterAssign": {
+					"level": "error",
+					"options": {
+						"propertyAssignment": "deny"
+					}
+				},
+				"noParameterProperties": "off",
+				"noRestrictedImports": "off",
+				"noRestrictedTypes": "off",
+				"useArrayLiterals": "off",
+				"useAsConstAssertion": "off",
+				"useConsistentArrayType": "off",
+				"useConsistentCurlyBraces": "off",
+				"useConsistentMemberAccessibility": "off",
+				"useDefaultParameterLast": "off",
+				"useEnumInitializers": "off",
+				"useExportType": "error",
+				"useForOf": "off",
+				"useFragmentSyntax": "off",
+				"useImportType": {
+					"level": "error",
+					"options": {
+						"style": "separatedType"
+					}
+				},
+				"useLiteralEnumMembers": "off",
+				"useNamingConvention": "off",
+				"useShorthandFunctionType": "off",
+				"useThrowOnlyError": "off"
+			},
+			"suspicious": {
+				"noAlert": "error",
+				"noArrayIndexKey": "off",
+				"noCommentText": "off",
+				"noConfusingVoidType": "off",
+				"noDocumentImportInPage": "off",
+				"noDoubleEquals": {
+					"level": "error",
+					"options": {
+						"ignoreNull": false
+					}
+				},
+				"noDuplicateClassMembers": "off",
+				"noDuplicateJsxProps": "off",
+				"noEmptyBlockStatements": "off",
+				"noEmptyInterface": "off",
+				"noExplicitAny": "off",
+				"noExtraNonNullAssertion": "off",
+				"noHeadImportInDocument": "off",
+				"noImportCycles": "error",
+				"noMisleadingInstantiator": "off",
+				"noRedeclare": "off",
+				"noUnsafeDeclarationMerging": "off",
+				"useAdjacentOverloadSignatures": "off",
+				"useAwait": "off",
+				"useGoogleFontDisplay": "off",
+				"useNamespaceKeyword": "off"
+			}
+		}
+	},
+	"overrides": [
+		{
+			"assist": {
+				"actions": {
+					"source": {
+						"useSortedKeys": "off"
+					}
+				}
+			},
+			"includes": ["**/package.json"]
+		}
+	],
+	"root": true,
+	"vcs": {
+		"clientKind": "git",
+		"enabled": true,
+		"useIgnoreFile": true
+	}
+}
