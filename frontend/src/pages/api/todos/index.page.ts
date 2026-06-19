@@ -23,6 +23,6 @@ export default async function handler(
 		res.status(201).json(await db.save(nextTodos));
 	} else {
 		res.setHeader("Allow", ["GET", "POST"]);
- 		res.status(405).end();
+		res.status(405).end();
 	}
 }
