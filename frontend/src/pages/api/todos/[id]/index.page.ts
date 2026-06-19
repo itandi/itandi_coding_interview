@@ -47,6 +47,7 @@ export default async function handler(
 			res.status(204).end();
 		}
 	} else {
-		res.status(400).end();
+		res.setHeader("Allow", ["GET", "PATCH", "DELETE"]);
+ 		res.status(405).end();
 	}
 }
