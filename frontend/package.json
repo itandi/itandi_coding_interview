@@ -4,11 +4,12 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"biome": "pnpm exec biome check",
+		"biome": "biome check",
 		"build": "next build",
 		"dev": "next dev",
-		"eslint": "pnpm exec eslint --max-warnings 0",
-		"start": "next start"
+		"eslint": "eslint --max-warnings 0",
+		"start": "next start",
+		"tsc": "tsc"
 	},
 	"dependencies": {
 		"next": "16.2.9",

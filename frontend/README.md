@@ -36,6 +36,7 @@
   - `pnpm biome`
   - `pnpm build`
   - `pnpm eslint`
+  - `pnpm tsc`
 - BiomeやESLintのルールを変更することは**禁止**します
    - インラインでのdisableは許可しますが、**必ず**disableした理由をコメントで書いてください
 - 必要であればパッケージを追加してください
