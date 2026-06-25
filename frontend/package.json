@@ -1,0 +1,43 @@
+{
+	"name": "@itandi/frontend",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"biome": "biome check",
+		"build": "next build",
+		"dev": "next dev",
+		"eslint": "eslint --max-warnings 0",
+		"start": "next start",
+		"tsc": "tsc"
+	},
+	"dependencies": {
+		"next": "16.2.9",
+		"react": "19.2.4",
+		"react-dom": "19.2.4"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.0",
+		"@eslint/compat": "2.1.0",
+		"@types/node": "24.1.0",
+		"@types/react": "19.2.17",
+		"@types/react-dom": "19.2.3",
+		"eslint": "10.5.0",
+		"eslint-plugin-react": "7.37.5",
+		"eslint-plugin-react-hooks": "7.1.1",
+		"eslint-plugin-sort": "4.0.0",
+		"globals": "17.6.0",
+		"typescript": "6.0.3",
+		"typescript-eslint": "8.61.1"
+	},
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "11.7.0"
+		},
+		"runtime": {
+			"name": "node",
+			"version": "24.17.0"
+		}
+	}
+}
