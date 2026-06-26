@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  db:
+    image: mysql:8.0
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=GxfRcpCDBL3T9d
+  web:
+    build: .
+    volumes:
+      - /usr/src/app/node_modules
+      - .:/usr/src/app
+    environment:
+      - DATABASE_URL=mysql2://root:GxfRcpCDBL3T9d@db/coding_interview
+      - DATABASE_TEST_URL=mysql2://root:GxfRcpCDBL3T9d@db/coding_interview_test
+    depends_on:
+      - db
+    ports:
+      - 3000:3000
+    command: sh -c "rm -f tmp/pids/server.pid && bin/rails db:create db:migrate && bin/rails s -b 0.0.0.0"
+
+volumes:
+  db-data:
+    driver: local
