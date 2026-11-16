@@ -90,8 +90,7 @@
 				"useJsxKeyInIterable": "off"
 			},
 			"nursery": {
-				"useExplicitType": "off",
-				"useImportsFirst": "error"
+				"useExplicitType": "off"
 			},
 			"performance": {
 				"noBarrelFile": "error",
@@ -129,6 +128,7 @@
 				"useExportType": "error",
 				"useForOf": "off",
 				"useFragmentSyntax": "off",
+				"useImportsFirst": "error",
 				"useImportType": {
 					"level": "error",
 					"options": {
