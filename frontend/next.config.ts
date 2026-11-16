@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
 		useTypeScriptCli: false
 	},
 	pageExtensions: ["page.tsx", "page.ts"],
+	reactCompiler: true,
 	reactStrictMode: true
 };
 
