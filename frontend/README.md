@@ -11,18 +11,18 @@
 ### 機能要件
 
 - TODOは以下のプロパティを**必ず**持ってください（機能追加のためにプロパティを足すことは可能です）
-   - `id`: TODOを一意に識別できる値
-   - `title`: TODOのタイトル
-   - `content`: TODOの詳細
-   - `completed`: 完了状態
-   - `createdAt`: 作成日時
-   - `updatedAt`: 更新日時（作成時は作成日時と同じ） 
+  - `id`: TODOを一意に識別できる値
+  - `title`: TODOのタイトル
+  - `content`: TODOの詳細
+  - `completed`: 完了状態
+  - `createdAt`: 作成日時
+  - `updatedAt`: 更新日時（作成時は作成日時と同じ）
 - 画面からTODOの作成、表示、更新、削除を行えるようにしてください
 - 「Crazyな機能」はイタンジが大事にしている「それはCrazyか？」をもじったお題であり、機能のCrazyさ（奇抜さ）は評価対象ではありません
 
 ### 技術（コーディング）要件
 
-- Pages Routerで実装してください 
+- Pages Routerで実装してください
 - 以下のAPIを用意していますが、必要であれば修正・拡張していただいて構いません
   - `GET /api/todos`: すべてのTODOを取得
   - `POST /api/todos`: TODOを追加
@@ -30,16 +30,16 @@
   - `PATCH /api/todos/[id]`: 特定のTODOを修正
   - `DELETE /api/todos/[id]`: 特定のTODOを削除
 - CSSの基礎実装力を確認したいため、以下の制約を設けます
-   - **NG**: Tailwind CSSなどのUtility Firstフレームワーク、Bootstrap、MUIなどのUIコンポーネントライブラリの使用は**不可**とします。 
-   - **OK**: フレームワークやUIコンポーネントライブラリに依存しない手法（CSS Modules, Emotion, styled-componentsなど）を使用してください。 
-   - **補足**: デザインの美しさは評価対象ではありませんが、レイアウト崩れがなく、操作可能な状態にしてください
+  - **NG**: Tailwind CSSなどのUtility Firstフレームワーク、Bootstrap、MUIなどのUIコンポーネントライブラリの使用は**不可**とします。
+  - **OK**: フレームワークやUIコンポーネントライブラリに依存しない手法（CSS Modules, Emotion, styled-componentsなど）を使用してください。
+  - **補足**: デザインの美しさは評価対象ではありませんが、レイアウト崩れがなく、操作可能な状態にしてください
 - 以下が正常終了することを確認してください
   - `pnpm biome`
   - `pnpm build`
   - `pnpm eslint`
   - `pnpm tsc`
 - BiomeやESLintのルールを変更することは**禁止**します
-   - インラインでのdisableは許可しますが、**必ず**disableした理由をコメントで書いてください
+  - インラインでのdisableは許可しますが、**必ず**disableした理由をコメントで書いてください
 - 必要であればパッケージを追加してください
 
 ## 2. 生成AIの利用について
