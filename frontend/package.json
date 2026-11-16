@@ -7,9 +7,9 @@
 		"biome": "biome check",
 		"build": "next build",
 		"dev": "next dev",
-		"eslint": "eslint --max-warnings 0",
+		"eslint": "next typegen && eslint --max-warnings 0",
 		"start": "next start",
-		"tsc": "tsc"
+		"tsc": "next typegen && tsc"
 	},
 	"dependencies": {
 		"next": "16.4.6",
